@@ -1,3 +1,3 @@
 export default function resolveProductionUrl(document) {
-    return `http://localhost:8000`
+    return `https://preview-gatsbytest87312.gtsb.io/`
   }
