@@ -1,3 +1,3 @@
 export default function resolveProductionUrl(document) {
-    return `http://localhost:8080`
+    return `http://localhost:8000`
   }
