@@ -1,3 +1,4 @@
+import React from 'react'
 /**
  * This is the schema definition for the rich text fields used for
  * for this blog studio. When you import it in schemas.js it can be
@@ -8,6 +9,15 @@
  *    type: 'blockContent'
  *  }
  */
+
+const highlightIcon = () => (
+  <span style={{fontWeight: 'bold'}}>H</span>
+)
+
+const highlightRender = props => (
+  <span style={{ backgroundColor: '#419bf9', borderRadius: '4px', color: "#ffffff", padding: '4px' }}>{props.children}</span>
+)
+
 export default {
   title: 'Block Content',
   name: 'blockContent',
@@ -36,6 +46,14 @@ export default {
         decorators: [
           {title: 'Strong', value: 'strong'},
           {title: 'Emphasis', value: 'em'},
+          {
+            title: 'Highlight',
+            value: 'highlight',
+            blockEditor: {
+              icon: highlightIcon,
+              render: highlightRender
+            }
+          }
         ],
         // Annotations can be any object structure – e.g. a link or a footnote.
         annotations: [
@@ -60,6 +78,9 @@ export default {
     {
       type: 'image',
       options: {hotspot: true},
+    },
+    {
+      type: 'button',
     },
   ],
 }
