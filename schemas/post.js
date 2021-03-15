@@ -43,6 +43,11 @@ export default {
       type: 'datetime',
     },
     {
+      name: 'readTime',
+      title: 'Read Time (Minutes)',
+      type: 'string',
+    },
+    {
       name: 'body',
       title: 'Body',
       type: 'blockContent',

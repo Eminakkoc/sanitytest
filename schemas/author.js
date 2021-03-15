@@ -26,17 +26,19 @@ export default {
       },
     },
     {
-      name: 'bio',
-      title: 'Bio',
-      type: 'array',
-      of: [
-        {
-          title: 'Block',
-          type: 'block',
-          styles: [{title: 'Normal', value: 'normal'}],
-          lists: [],
-        },
-      ],
+      name: 'twitter',
+      title: 'Twitter',
+      type: 'string',
+    },
+    {
+      name: 'linkedin',
+      title: 'Linkedin',
+      type: 'string',
+    },
+    {
+      name: 'facebook',
+      title: 'Facebook',
+      type: 'string',
     },
   ],
   preview: {

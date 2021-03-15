@@ -80,7 +80,10 @@ export default {
       options: {hotspot: true},
     },
     {
-      type: 'button',
+      type: 'youtube'
     },
+    {
+      type: 'author'
+    }
   ],
 }
