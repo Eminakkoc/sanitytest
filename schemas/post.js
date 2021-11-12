@@ -29,6 +29,11 @@ export default {
       type: 'image',
     },
     {
+      name: 'otherImage',
+      title: 'Other image',
+      type: 'image',
+    },
+    {
       name: 'categories',
       title: 'Categories',
       type: 'array',
